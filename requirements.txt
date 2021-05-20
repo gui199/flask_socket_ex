@@ -1,0 +1,4 @@
+Flask_SocketIO==5.0.1
+Flask==1.0.2
+eventlet
+PySimpleGUI==4.33.0

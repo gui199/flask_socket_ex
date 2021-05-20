@@ -3,8 +3,7 @@ from flask_socketio import SocketIO, emit, send
 
 app = Flask(__name__, template_folder="./")
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app, logger=True, engineio_logger=True)
-
+socketio = SocketIO(app, logger=True, engineio_logger=True, cors_allowed_origins='*')
 
 @app.route('/')
 def index():
